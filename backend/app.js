@@ -7,7 +7,7 @@ app.use((req, res, next) => {
    res.json({ message: 'Votre requête a bien été reçue !' }); 
 });
 
-mongoose.connect('mongodb+srv://JeremyPromsy:JeremyP31@cluster0-pme76.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://Jeremy31:JeremyP310895@cluster0.sc32jxh.mongodb.net/?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
