@@ -1,11 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
-const app = express();
-
-app.use((req, res, next) => {
-   res.json({ message: 'Votre requête a bien été reçue !' }); 
-});
+const userRoutes = require('./routes/user');
 
 mongoose.connect('mongodb+srv://Jeremy31:JeremyP310895@cluster0.sc32jxh.mongodb.net/?retryWrites=true&w=majority',
   { useNewUrlParser: true,
@@ -20,6 +15,10 @@ app.use((req, res, next) => {
     next();
   });
 
+const app = express();
+
 app.use(express.json());
+
+
 
 module.exports = app;
