@@ -8,6 +8,8 @@ mongoose.connect('mongodb+srv://Jeremy31:JeremyP310895@cluster0.sc32jxh.mongodb.
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
+const app = express();  
+
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
@@ -15,7 +17,7 @@ app.use((req, res, next) => {
     next();
   });
 
-const app = express();
+
 
 app.use(express.json());
 
