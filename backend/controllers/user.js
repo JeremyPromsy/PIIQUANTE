@@ -42,14 +42,3 @@ exports.login = (req, res, next) => {
         })
         .catch(error => res.status(500).json({ error }));
 };
-
-exports.somme = (req, res, next) => {
-    let a=req.query.a; 
-    let b=req.query.b;
-    
-    let total=a+b;
-
-    res.status(200).json({
-        result : total
-    })
-}
