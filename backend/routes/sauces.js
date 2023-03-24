@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const router = express.Router();
 
 const auth = require('../middleware/auth');
@@ -13,4 +13,4 @@ router.get("/", auth, saucesCtrl.getAllSauces);
 router.get("/:id", auth, saucesCtrl.getSauce);
 router.post("/:id/like", auth, saucesCtrl.likeSauce);
 
-module.exports = router;
+module.exports = router;*/
