@@ -39,9 +39,6 @@ exports.updateSauce = (req, res, next) => {
                 .catch(error => res.status(400).json({ error }))
             }
           })
-    .catch((error) => {
-      res.status(500).json({ error });
-      });
 };
 
 exports.deleteSauce = (req, res, next) => {
@@ -58,7 +55,4 @@ exports.deleteSauce = (req, res, next) => {
       });
      }
     })
-    .catch( error => {
-      res.status(500).json({ error });
-    });
 };
